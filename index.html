@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CONTABILIDADE.COM</title>
+</head>
+<body>
+    <div class="center">
+    <div class="container">
+    <h1>Quer calcular seu salário?</h1>
+    <br>
+    <p>Coloque aqui quanto você recebe por hora</p>
+    <input type="number" id="vh">
+    <br>
+    <p>Coloque quantas horas você trabalhou no mês:</p>
+    <input type="number" id="h">
+    <br>
+    <br>
+    <button onclick="salarioB()">Salário Bruto</button>
+    <br>
+    <p>Seu salário bruto é de R$ <span id="sb"></span></p>
+    <br>
+    <div> 
+        <center>
+        <table id="tabela">
+            <tr>
+                <td>INSS</td>
+                <td>8%</td>
+            </tr>
+            <tr>
+                <td>Imposto de Renda</td>
+                <td>11%</td>
+            </tr>
+            <tr>
+                <td>Sindicato</td>
+                <td>5%</td>
+            </tr>
+        </center>
+        </table>
+    </div>
+    <br>
+    <button onclick="salarioL()">calcular</button>
+    <br>
+    <p>Seu salário líquido vai ser de R$<span id="sl"></span></p> 
+    <br>
+    <script src="algoritmo.js"></script>
+</div>
+</div>
+</body>
+</html>
